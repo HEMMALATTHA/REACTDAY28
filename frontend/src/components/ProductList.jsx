@@ -9,7 +9,7 @@ const ProductList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/products/")
+    axios.get("https://reactday28.onrender.com/api/products/")
       .then(res => {
         console.log("Products from backend:", res.data);
         setProducts(res.data);

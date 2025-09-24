@@ -10,7 +10,7 @@ const Cart = () => {
 
   const placeOrder = async () => {
     try {
-      await axios.post("http://127.0.0.1:8000/api/orders/", {
+      await axios.post("https://reactday28.onrender.com/api/orders/", {
         cart: cart.map(item => ({ id: item.id })) // send only IDs
       });
       alert("Order placed!");
